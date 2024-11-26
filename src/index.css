@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  transition: background-color 0.3s, color 0.3s;
+}
+
 @layer base {
   body {
     @apply bg-[#0D0707] text-white;
@@ -10,7 +14,7 @@
 
 @layer components {
   .nav-link {
-    @apply text-gray-300 hover:text-red-500 transition-colors duration-300;
+    @apply dark:text-gray-300 text-black hover:text-red-500 transition-colors duration-300;
   }
 
   .service-card {
@@ -31,7 +35,7 @@
   }
 
   .partner-logo {
-    @apply h-12 w-auto grayscale opacity-50 hover:grayscale-0 
+    @apply h-12 w-auto dark:grayscale opacity-50 hover:grayscale-0 
            hover:opacity-100 transition-all duration-300
            cursor-pointer;
   }
@@ -44,7 +48,7 @@
   }
 
   .form-input {
-    @apply w-full bg-brown border border-velbetRed rounded-lg p-3 
+    @apply w-full dark:bg-brown border dark:border-velbetRed rounded-lg p-3 
            focus:border-red-500 focus:ring-1 focus:ring-red-500 
            transition-colors outline-none text-gray-300;
   }

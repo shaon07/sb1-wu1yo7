@@ -23,12 +23,14 @@ export default function FeatureCard({
         >
           0{index}
         </div>
+
         <div className="p-6 pb-3 relative z-10">
           <h2 className="flex items-center gap-2 text-xl font-medium mt-[3rem]">
             {icon}
             <span>{title}</span>
           </h2>
         </div>
+
         <div className="h-full relative z-10 pr-0 pt-1 pb-4">
           <div
             className="border-l-2 border-t-2 border-red-500/50 rounded-tl-xl pt-4 pl-4 pb-4 w-[80%] ml-auto h-full
@@ -39,7 +41,9 @@ export default function FeatureCard({
             <ul className="space-y-2">
               {features.map((service, index) => (
                 <li key={index} className="flex items-center gap-2">
-                  <Check className="h-4 w-4 shrink-0" aria-hidden="true" />
+                  <span className="shrink-0 bg-white rounded-full">
+                    <Check size={15} color="black" aria-hidden="true" />
+                  </span>
                   <span className="text-sm">{service}</span>
                 </li>
               ))}

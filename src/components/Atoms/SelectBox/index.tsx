@@ -11,7 +11,7 @@ type SelectBoxProps = {
 export default function SelectBox({ label, options }: SelectBoxProps) {
   return (
     <div className="flex flex-col gap-1.5">
-      {label && <label>{label}</label>}
+      {label && <label className="text-dark dark:text-white">{label}</label>}
       <select className="form-input">
         {options.map((option) => (
           <option key={option.value} value={option.value}>

@@ -6,7 +6,7 @@ type HoverIconProps = {
 
 export default function HoverIcon({ children }: HoverIconProps) {
   return (
-    <a href="#" className="text-gray-400 hover:text-red-500 transition-colors">
+    <a href="#" className="text-white bg-dark dark:bg-lightRed p-2 rounded-full hover:text-red-500 transition-colors">
       {children}
     </a>
   );

@@ -9,8 +9,8 @@ export default function SupportLinks() {
     <div className="grid md:grid-cols-3 md:place-items-center gap-8 mb-8">
       {Object.entries(supportLinks).map(([category, links]) => (
         <div key={category} className="self-start">
-          <h3 className="font-semibold mb-4">{category}</h3>
-          <ul className="space-y-2 text-gray-400">
+          <h3 className="font-semibold text-dark dark:text-white mb-4">{category}</h3>
+          <ul className="space-y-2 text-dark dark:text-gray-400">
             {links.map((link) => (
               <li key={link}>
                 <a href="#" className="hover:text-red-500 transition-colors">
