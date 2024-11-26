@@ -44,7 +44,7 @@
   }
 
   .form-input {
-    @apply w-full bg-[#1A1111] border border-gray-800 rounded-lg p-3 
+    @apply w-full bg-brown border border-velbetRed rounded-lg p-3 
            focus:border-red-500 focus:ring-1 focus:ring-red-500 
            transition-colors outline-none text-gray-300;
   }

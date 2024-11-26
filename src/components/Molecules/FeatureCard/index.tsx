@@ -1,13 +1,5 @@
-import React, { ReactNode } from 'react';
-import { Check, Cog } from 'lucide-react';
-
-const services = [
-  'UIUX',
-  'DevOps',
-  'Web design',
-  'Frontend dev',
-  'Backend dev',
-];
+import { ReactNode } from "react";
+import { Check } from "lucide-react";
 
 type FeatureCardProps = {
   features: string[];
@@ -23,7 +15,7 @@ export default function FeatureCard({
   index,
 }: FeatureCardProps) {
   return (
-    <div className="w-full max-w-md">
+    <div className="w-full">
       <div className="h-full bg-gradient-to-br from-red-950 to-red-900 text-white overflow-hidden relative rounded-lg shadow-lg">
         <div
           className="absolute top-[-20px] left-[-10px] text-red-900/30 text-[150px] font-bold leading-none"

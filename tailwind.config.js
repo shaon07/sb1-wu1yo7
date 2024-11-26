@@ -9,6 +9,7 @@ export default {
         darkRed: '#120808CC',
         velbetRed: '#170302',
         lightRed: '#521815',
+        brown:"#332211"
       },
       animation: {
         'fade-in': 'fadeIn 0.8s ease-out forwards',

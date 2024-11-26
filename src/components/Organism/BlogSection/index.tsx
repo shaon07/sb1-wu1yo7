@@ -1,5 +1,5 @@
-import React from 'react';
-import { ArrowUpRight, Check, MoveUpRight } from 'lucide-react';
+import { Check, MoveUpRight } from "lucide-react";
+import Button from "../../Atoms/Button";
 
 export default function BlogSection() {
   return (
@@ -12,8 +12,8 @@ export default function BlogSection() {
           startup companies
         </h2>
 
-        <div className="bg-[#120808]/80 rounded-xl py-8 backdrop-blur-sm border border-red-900/10">
-          <div className="grid md:grid-cols-2 gap-8">
+        <div className="bg-velbetRed py-8 backdrop-blur-sm">
+          <div className="grid md:grid-cols-2 gap-8 border border-lightRed rounded-md p-6">
             <img
               src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&q=80"
               alt="Blog post"
@@ -30,6 +30,7 @@ export default function BlogSection() {
                   improved APIs back over to Remix where they started!
                 </p>
               </div>
+
               <div className="flex items-center justify-between text-gray-400">
                 <div className="flex flex-col">
                   <span className="flex items-center gap-1">
@@ -40,6 +41,7 @@ export default function BlogSection() {
                     />
                     Collaboration Tools
                   </span>
+
                   <span className="flex items-center gap-1">
                     <Check
                       size={15}
@@ -49,6 +51,7 @@ export default function BlogSection() {
                     Development
                   </span>
                 </div>
+
                 <div>
                   <MoveUpRight
                     size={30}
@@ -61,9 +64,9 @@ export default function BlogSection() {
           </div>
 
           <div className="w-full mt-12">
-            <button className="mx-auto group flex items-center bg-velbetRed text-white border border-white rounded-md py-2 px-3">
+            <Button className="mx-auto group flex items-center bg-velbetRed text-white border border-white py-2 px-3">
               Read more
-            </button>
+            </Button>
           </div>
         </div>
       </div>
