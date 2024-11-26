@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#0D0707] text-white;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply text-gray-300 hover:text-red-500 transition-colors duration-300;
+  }
+
+  .service-card {
+    @apply bg-[#120808]/80 rounded-xl backdrop-blur-sm 
+           hover:bg-red-900/10 transition-all duration-300 
+           transform hover:-translate-y-1 border border-red-500/20
+           relative overflow-hidden;
+  }
+
+  .service-card::before {
+    content: '';
+    @apply absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-500/0 via-red-500 to-red-500/0 opacity-0 
+           transition-opacity duration-300;
+  }
+
+  .service-card:hover::before {
+    @apply opacity-100;
+  }
+
+  .partner-logo {
+    @apply h-12 w-auto grayscale opacity-50 hover:grayscale-0 
+           hover:opacity-100 transition-all duration-300
+           cursor-pointer;
+  }
+
+  .btn-primary {
+    @apply bg-red-600 hover:bg-red-700 text-white px-6 py-3 
+           rounded-lg transition-all duration-300 transform 
+           hover:-translate-y-0.5 hover:shadow-lg 
+           hover:shadow-red-600/20 font-medium;
+  }
+
+  .form-input {
+    @apply w-full bg-[#1A1111] border border-gray-800 rounded-lg p-3 
+           focus:border-red-500 focus:ring-1 focus:ring-red-500 
+           transition-colors outline-none text-gray-300;
+  }
+
+  .floating-stats {
+    @apply absolute p-4 bg-[#120808]/90 backdrop-blur-sm rounded-xl
+           border border-red-900/10 shadow-xl;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.btn-shadow {
+  box-shadow: 0px 8px 20px rgb(220 38 38 / var(--tw-bg-opacity));
+}
